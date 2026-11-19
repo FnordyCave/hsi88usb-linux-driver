@@ -1,0 +1,3 @@
+# Optional: permit members of the plugdev group to use the compatibility API.
+# The kernel module creates /dev/hsi88usbN with mode 0660.
+KERNEL=="hsi88usb[0-9]*", GROUP="plugdev", MODE="0660"
