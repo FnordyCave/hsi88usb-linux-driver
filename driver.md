@@ -32,16 +32,6 @@ Unload with:
 sudo rmmod hsi88usb
 ```
 
-## Example binary command
-
-With one module on each bus line, the application-level registration bytes are:
-
-```text
-73 01 01 01 0d
-```
-
-(`73` is ASCII `s`). The driver translates this to the captured USB OUT packet `05 81 01 01 01`.
-
 ## Notes
 
 - `poll(2)`/`select(2)` work for asynchronous feedback.
